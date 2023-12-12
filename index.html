@@ -56,9 +56,14 @@
             <li class="nav-item">
               <a class="nav-link" href="#skills">Skills</a>
             </li>
-
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certificates">Certificates</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -74,10 +79,17 @@
 
     <!-- Home  -->
 
-    <div class="container">
-      <h1 class="display-4">Hello, I'm Nayan Kadhre</h1>
-      <p class="lead">"I'm a novice Web Developer and Data Science enthusiast based in India."</p>
-      <a class="btn btn-primary btn-lg" href="#projects" role="button">View my work</a>
+    <div class="main-div">
+      <video autoplay loop muted playsinline id="bgVideo">
+        <source src="videos/space2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="container">
+
+        <h1 class="display-4 animated" id="heading">Hello, I'm Nayan Kadhre</h1>
+        <p class="lead animated fadeInUp delay-1s" id="tagline">"Just a Data Detective at work"</p>
+        <a class="btn btn-primary btn-lg" href="#projects" role="button">View my work</a>
+      </div>
     </div>
   </header>
 
@@ -86,21 +98,20 @@
     <div class="row container-fluid">
       <h1>Skills</h1>
       <div class="col-lg-4 skill-list">
-        <h3>Technical Skills</h3>
-        <ul>
-          <li>React.js</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
+        <h3 class="ad-bg">Technical Skills</h3>
+        <ul class="ad-bg">
+          <li>Python</li>
           <li>SQL</li>
-          <li>Node.js, Express.js</li>
+          <li>R (Programming Language)</li>
+          <li>Google Sheets / Microsoft Excel</li>
+          <li>Tableau</li>
           <li>Git, GitHub</li>
         </ul>
       </div>
 
       <div class="col-lg-4 skill-list ">
-        <h3>Soft Skills</h3>
-        <ul>
+        <h3 class="ad-bg">Soft Skills</h3>
+        <ul class="ad-bg">
           <li>Detail-Oriented</li>
           <li>Emotional Intelligence</li>
           <li>Collaboration</li>
@@ -109,11 +120,10 @@
       </div>
 
       <div class="col-lg-4 skill-list">
-        <h3>Other Skills</h3>
-        <ul>
+        <h3 class="ad-bg">Other Skills</h3>
+        <ul class="ad-bg">
           <li>Blender</li>
           <li>Clip Studio Paint</li>
-          <li>Power BI</li>
           <li>Figma</li>
         </ul>
       </div>
@@ -121,21 +131,69 @@
     </div>
   </section>
 
+
+  <!-- Experience -->
+
+  <section id="experience">
+    <div class="container-fluid">
+      <h1>Experience</h1>
+      <div class="row justify-content-center">
+
+        <!-- Job Experience Card 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="experience-card">
+            <h2>Data Analyst Intern</h2>
+            <h3>Cloud Counselage Pvt. Ltd., Mumbai</h3>
+            <p class="duration">July 2023 - September 2023</p>
+            <p class="description">
+              As a Data Analyst Intern at Cloud Counselage, I independently led a comprehensive data analysis project
+              aimed at extracting key insights from student feedback data. My responsibilities included data cleaning,
+              analysis, and the creation of detailed documentation and reports.
+            </p>
+            <ul class="highlights">
+              <li>Performed data cleaning and preprocessing using Python, ensuring data accuracy and reliability.</li>
+              <li>Utilized Jupyter Notebook, pandas, NumPy, and matplotlib libraries for in-depth data manipulation and
+                analysis.</li>
+              <li>Generated effective visualizations to convey complex findings to stakeholders.</li>
+              <li>Provided valuable insights into academic performance, overall experience, and expected salary of
+                students through the analysis.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
   <!-- Projects -->
   <section id="projects">
     <div class="container-fluid">
-      <h1 class="ab-bg">Projects</h1>
+      <h1>Projects</h1>
 
       <div class="card mb-3">
         <div class="row">
-          <div class="col-md-3">
-            <img src="images/task.jpg" class="img-fluid rounded-start" alt="Task-Management">
+          <div class="col-md-4">
+            <img src="images/project1.png" class="img-fluid rounded-start" alt="Task-Management">
           </div>
-          <div class="col-md-9">
+          <div class="col-md-8">
             <div class="card-body">
-              <h3 class="card-title">Task Inventory App</h3>
-              <p class="card-text">Designed and developed a Task Inventory web application using Node.js, Express.js, EJS and MongoDB having a clean and intuitive interface to optimize the user experience. Implemented features that allow users to effortlessly add tasks, define priority, difficulty levels, and time period, with storage in a MongoDB database. Also added task deletion functionality for users to easily manage their tasks. Leveraged the power of MongoDB Atlas, ensuring scalable and globally accessible data storage for enhanced performance and reliability.</p>
-              <p>GitHub: <a href="https://github.com/NayankumarKadhre/Task-Inventory.git">Task Inventory App</a>
+              <h3 class="card-title">Ecommerce Sales Analysis</h3>
+              <p class="card-text">This Ecommerce Sales Analysis project converts vast Year-to-Date (YTD) sales data
+                into actionable insights through a Tableau Dashboard. With 115,000+ rows, it centers on vital indicators
+                like Monthly Sales and Profit. Visual elements, such as donut and bump charts, adeptly convey trends.
+                The dark-themed dashboard, enhanced with Market and Customer Segment filters, guarantees a visually
+                intuitive interface. This detailed analysis, featuring tooltips and thoughtful design, promotes easy
+                comprehension, fostering informed decision-making.</p>
+              <p><a href="https://github.com/NayankumarKadhre/Ecommerce-Sales-Data-Analysis-Dashboard.git">GitHub</a>
+                <span class="separator">|</span>
+                <a
+                  href="https://public.tableau.com/views/ECOMMERCESALESDASHBOARDYTDSalesAnalysis/EcommerceSalesDashboard?:language=en-US&:display_count=n&:origin=viz_share_link">
+                  Tableau Dashboard</a>
               </p>
             </div>
           </div>
@@ -144,10 +202,36 @@
 
       <div class="card mb-3">
         <div class="row">
-          <div class="col-md-3">
-            <img src="images/cnn.jpg" class="img-fluid rounded-start" alt="Task-Management">
+          <div class="col-md-4">
+            <img src="images/project2.png" class="img-fluid rounded-start" alt="Task-Management">
           </div>
-          <div class="col-md-9">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title">USA Haunted Places Analysis</h3>
+              <p class="card-text">Exploring haunted places through a solo paranormal analysis across the USA, this
+                project utilizes an interactive Tableau Dashboard to map locations and reveal insights into the
+                supernatural realm. Visualizations include the distribution of haunted places, accompanied by their
+                haunting stories, offering an immersive experience. With no stakeholder collaboration, this passionate
+                foray into the unknown transforms haunted data into captivating narratives of paranormal tales across
+                the United States.</p>
+              <p><a
+                  href="https://github.com/NayankumarKadhre/USA-Haunted-Places-Analysis-Tableau-Dashboard.git">GitHub</a>
+                <span class="separator">|</span>
+                <a
+                  href="https://public.tableau.com/views/HauntingsofUSA/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link">
+                  Tableau Dashboard</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="images/dn.jpg" class="img-fluid rounded-start" alt="Task-Management">
+          </div>
+          <div class="col-md-8">
             <div class="card-body">
               <h3 class="card-title">Hindi Handwritten Digit Recogniton App</h3>
               <p class="card-text">In this project, a Hindi Handwritten Digit Recognition application has been
@@ -155,12 +239,15 @@
                 or draw digits directly on a canvas for prediction. Leveraging our custom-built hybrid CNN-LSTM model
                 with an accuracy of 99.98%,
                 the application accurately predicts the corresponding digit label with high precision.</p>
-              <p class="project-links">GitHub: <a
-                  href="https://github.com/NayankumarKadhre/Hindi-Digit-Recognizer-App">Hindi Handwritten Digit
-                  Recogniton App</a></p>
-              <!-- <p class="project-links">Dataset: <a href="https://www.kaggle.com/datasets/anurags397/hindi-mnist-data">Hindi/Devanagari Digit MNIST Data</a></p> -->
-              <p>Paper: <a href="https://link.springer.com/chapter/10.1007/978-981-19-3148-2_67">Recognition of
-                  Handwritten Digits Using Neural Networks: A Review</a></p>
+              <p class="project-links">
+
+                <a href="https://github.com/NayankumarKadhre/Hindi-Digit-Recognizer-App">GitHub</a>
+                <!-- <span class="separator">|</span>
+              <a href="https://www.kaggle.com/datasets/anurags397/hindi-mnist-data">Dataset</a> -->
+                <span class="separator">|</span>
+                <a href="https://link.springer.com/chapter/10.1007/978-981-19-3148-2_67">Paper: Handwritten Digits Using
+                  Neural Networks: A Review</a>
+              </p>
             </div>
           </div>
         </div>
@@ -168,6 +255,36 @@
 
     </div>
   </section>
+
+
+
+  <!-- Certificates -->
+  <section id="certificates">
+    <div class="container-fluid">
+      <h1>Certificates</h1>
+      <div class="row">
+
+        <div class="certificate-section">
+          <div class="certificate-card">
+            <img src="images/data-analysis.jpg" alt="Google-Data-Analytics-Certificate">
+
+            <span class="google-logo">
+              <img src="images/google_logo.png" alt="Google Logo">
+            </span>
+            <p>Google</p>
+
+            <a href="https://coursera.org/share/ecf36d08b29a100c05d094aefb65cbf1" target="_blank">
+              <h3 class="certificate-name">Google Data Analytics</h3>
+              <p>Professional Certificate</p>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
 
   <!-- About -->
   <section id="about">
@@ -183,7 +300,7 @@
             <p><strong>Address:</strong> Aurangabad, Maharashtra, India</p>
             <p><strong>Email:</strong> nayankumarkadhre@gmail.com</p>
             <p><strong>Gender:</strong> Male</span></p>
-            <p><strong>Interests:</strong> Reading, 3D Modeling/Sculpting, Philosophy, Learning Languages (Japanese)</p>
+            <p><strong>Interests:</strong> Reading, 3D Modeling, Philosophy, Learning Languages (Japanese)</p>
           </div>
           <div class="button-box">
             <button class="nineteen btn"><span><a class="ab-bg" href="files/Nayan_Kadhre_Resume.pdf"
@@ -222,7 +339,7 @@
 
   <!-- Contact Section -->
   <section id="contacts">
-    <div class="container-fluid ab-bg">
+    <div class="container-fluid">
       <h1>Contact</h1>
       <div class="contact-form">
         <form action="mailto:nayankumarkadhre@gmail.com" method="post" enctype="text/plain">
